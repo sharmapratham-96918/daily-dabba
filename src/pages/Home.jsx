@@ -1,9 +1,10 @@
-import { Clock } from "lucide-react"
+import { Clock, Link2 } from "lucide-react"
 import FeatureCard from "../components/FeatureCard"
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
 import { getMeals } from "../Features/meal/mealSlice"
 import LoaderComponent from "../components/LoaderComponent"
+import { Link } from "react-router-dom"
 
 
 const Home = () => {
@@ -32,9 +33,9 @@ const Home = () => {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Experience the taste of Indore with our freshly prepared lunch boxes delivered right to your doorstep
           </p>
-          <button className="bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transform hover:scale-105 transition duration-300 shadow-lg">
+          <Link to={"/meals"}  className="bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transform hover:scale-105 transition duration-300 shadow-lg">
             Order Now
-          </button>
+          </Link>
         </div>
       </section>
 
