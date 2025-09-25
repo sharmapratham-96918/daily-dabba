@@ -8,7 +8,7 @@ export default defineConfig({
   server :{
     proxy :{
       "/api" : {
-        target : "https://daily-dabba-3zuv.onrender.com",
+        target : "https://daily-dabba-3zuv.onrender.com/",
         changeOrigin : true,
         secure : false
       }
